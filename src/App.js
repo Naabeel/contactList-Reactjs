@@ -11,6 +11,8 @@ const App = () => {
   }, []);
   const [users, setUsers] = useState([]);
   const [addUserModal, setAddUserModal] = useState(false);
+
+  
   const deleteUser = (id) => {
     const filterUsers = users.filter((user) => user.id !== id);
     setUsers(filterUsers);

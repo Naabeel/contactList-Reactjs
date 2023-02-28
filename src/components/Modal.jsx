@@ -11,7 +11,7 @@ const Modal = ({ user, close, updateUser }) => {
   });
   const { name, email, phone, website } = values;
 
-  const onChangeHandler = (name) => (e) => {
+  const onChangeHandler = (name)=> (e) => {
     const value = e.target.value;
     setValues({ ...values, [name]: value });
   };
@@ -34,7 +34,7 @@ const Modal = ({ user, close, updateUser }) => {
             type="text"
             className="input"
             value={name}
-            onChange={onChangeHandler("name")}
+            onChange={onChangeHandler}
           />
         </div>
         <div className="inputHolder">
